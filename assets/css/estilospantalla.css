@@ -1,0 +1,59 @@
+.movimiento{
+    height:100px;
+  
+    
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;    
+    animation-play-state: running;
+    background-image: linear-gradient(87deg, #64e1f7 0, #4f95f1 100%);
+}
+
+@-webkit-keyframes animation {
+    /* 0%     {background-color:rgb(135, 247, 181);} */
+    0%     {background: linear-gradient(87deg, #64e1f7 0, #4f95f1 100%);}
+    50.0%  {background-color:#fafafa;}
+    /* 100.0%  {background-color:rgb(93, 248, 137);} */
+    100.0%  {background: linear-gradient(87deg, #11cdef 0, #1171ef 100%);}
+}
+
+
+
+
+.w3-animate-zoom {
+  animation:animatezoom 1.1s
+}
+@keyframes animatezoom{
+  from{transform:scale(0)} to{transform:scale(1)}
+
+}
+
+.tamanoletra{
+    font-size: -webkit-xxx-large;
+}
+
+
+
+@font-face {
+  font-family: "DS-Digital";
+  src: url("../fuente_reloj/BebasNeue-Regular.ttf") format('truetype');
+  
+}
+.fuentereloj {
+  font-family: "DS-Digital";
+  color:#32325d;
+  font-size: 5rem;
+  text-align: center;   
+}
+
+/* Desktop First approach */
+@media (max-width: 600px) {
+  .fuentereloj {
+      font-size: 5rem;
+      color: rgb(250, 250, 250);
+      text-align: center; 
+  }
+
+
+} 
