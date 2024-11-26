@@ -53,7 +53,7 @@ function Generar_reporte(){
                 'fechainicio':fechainicio,
                 'fechafin':fechafin
             },
-            "url": "/cursoudemy/models/model_reporte.php",
+            "url": "/digiturno/models/model_reporte.php",
     
         },
         columns: [

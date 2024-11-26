@@ -25,7 +25,7 @@ function Login() {
                     'usuario': usuariologin,
                     'password': passwordlogin
                 },
-                url: '/cursoudemy/models/login.php',
+                url: '/digiturno/models/login.php',
             }).then(function (response) {
                 var data = JSON.parse(response);
                 if (data.codigo == 0) {
@@ -40,7 +40,7 @@ function Login() {
                     localStorage.setItem('usuario', data.usuario);
                     localStorage.setItem('servicio', data.servicio);
                     localStorage.setItem('modulo', data.modulo);
-                    location.href = 'http://localhost/cursoudemy/views/inicio';
+                    location.href = 'http://localhost/digiturno/views/inicio';
                 } else if (data.codigo == 1){
                     Swal.fire({
                         title: 'Notificacion!',
