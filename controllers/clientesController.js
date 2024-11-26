@@ -36,7 +36,7 @@ var table = $("#TablaClientes").DataTable({
         "data": {
             'accion': 'ListarClientes',
         },
-        "url": "/cursoudemy/models/model_clientes.php",
+        "url": "/digiturno/models/model_clientes.php",
 
     },
     "columns": [
@@ -91,7 +91,7 @@ Cliente.fechan == "" || Cliente.fechan == null || Cliente.fechan == undefined){
                 'accion': 'RegistroCliente',
                 'datos': JSON.stringify(Cliente)
             },
-            url: '/cursoudemy/models/model_clientes.php',
+            url: '/digiturno/models/model_clientes.php',
         }).then(function (response) {
             var data = JSON.parse(response);
             if (data.codigo == 0) {
@@ -155,7 +155,7 @@ $.ajax({
         'accion': 'ObtenerCliente',
         'datos': idcliente
     },
-    url: '/cursoudemy/models/model_clientes.php',
+    url: '/digiturno/models/model_clientes.php',
 })
     .then(function (response) {
         var Data = JSON.parse(response);
@@ -206,7 +206,7 @@ var Cliente = {
                 'accion': 'ActualizarCliente',
                 'datos': JSON.stringify(Cliente)
             },
-            url: '/cursoudemy/models/model_clientes.php',
+            url: '/digiturno/models/model_clientes.php',
         }).then(function (response) {
             var data = JSON.parse(response);
             if (data.codigo == 0) {
@@ -274,7 +274,7 @@ Swal.fire({
                     'datos': id,
                     'estado': estado == 1 ? "A" : "I"
                 },
-                url: '/cursoudemy/models/model_clientes.php',
+                url: '/digiturno/models/model_clientes.php',
             }).then(function (response) {
                 var data = JSON.parse(response);
             if (data.codigo == 0) {

@@ -1,5 +1,5 @@
 <?php 
-	const BASE_URL = "http://localhost/cursoudemy/";
+	const BASE_URL = "http://localhost/digiturno/";
 	require_once('../../models/sessiones.php');
  ?>
 <!DOCTYPE html>

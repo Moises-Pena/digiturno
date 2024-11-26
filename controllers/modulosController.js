@@ -36,7 +36,7 @@ var table = $("#TablaModulos").DataTable({
         "data": {
             'accion': 'ListarModulos',
         },
-        "url": "/cursoudemy/models/model_modulos.php",
+        "url": "/digiturno/models/model_modulos.php",
 
     },
     "columns": [
@@ -75,7 +75,7 @@ if(Modulo.nombremodulo == "" || Modulo.nombremodulo == null || Modulo.nombremodu
                 'accion': 'RegistroModulo',
                 'datos': JSON.stringify(Modulo)
             },
-            url: '/cursoudemy/models/model_modulos.php',
+            url: '/digiturno/models/model_modulos.php',
         }).then(function (response) {
             var data = JSON.parse(response);
             if (data.codigo == 0) {
@@ -135,7 +135,7 @@ $.ajax({
         'accion': 'ObtenerModulo',
         'datos': idmodulo
     },
-    url: '/cursoudemy/models/model_modulos.php',
+    url: '/digiturno/models/model_modulos.php',
 })
     .then(function (response) {
         var Data = JSON.parse(response);
@@ -184,7 +184,7 @@ function ActualizarModulo() {
                 'accion': 'ActualizarModulos',
                 'datos': JSON.stringify(Modulo)
             },
-            url: '/cursoudemy/models/model_modulos.php',
+            url: '/digiturno/models/model_modulos.php',
         }).then(function (response) {
             var data = JSON.parse(response);
             if (data.codigo == 0) {
@@ -253,7 +253,7 @@ Swal.fire({
                     'datos': id,
                     'estado': estado == 1 ? "A" : "I"
                 },
-                url: '/cursoudemy/models/model_modulos.php',
+                url: '/digiturno/models/model_modulos.php',
             }).then(function (response) {
                 var data = JSON.parse(response);
             if (data.codigo == 0) {

@@ -74,7 +74,7 @@ var table = $("#TablaServicios").DataTable({
         "data": {
             'accion': 'ListarServicios',
         },
-        "url": "/cursoudemy/models/model_servicios.php",
+        "url": "/digiturno/models/model_servicios.php",
 
     },
     "columns": [
@@ -122,7 +122,7 @@ Servicio.letraservicio == "" || Servicio.letraservicio == null || Servicio.letra
                 'accion': 'RegistroServicio',
                 'datos': JSON.stringify(Servicio)
             },
-            url: '/cursoudemy/models/model_servicios.php',
+            url: '/digiturno/models/model_servicios.php',
         }).then(function (response) {
             var data = JSON.parse(response);
             if (data.codigo == 0) {
@@ -184,7 +184,7 @@ $.ajax({
         'accion': 'ObtenerServicio',
         'datos': idservicio
     },
-    url: '/cursoudemy/models/model_servicios.php',
+    url: '/digiturno/models/model_servicios.php',
 })
     .then(function (response) {
         var Data = JSON.parse(response);
@@ -242,7 +242,7 @@ function ActualizarServicio() {
                 'accion': 'ActualizarServicio',
                 'datos': JSON.stringify(Servicio)
             },
-            url: '/cursoudemy/models/model_servicios.php',
+            url: '/digiturno/models/model_servicios.php',
         }).then(function (response) {
             var data = JSON.parse(response);
             if (data.codigo == 0) {
@@ -311,7 +311,7 @@ Swal.fire({
                     'datos': id,
                     'estado': estado == 1 ? "A" : "I"
                 },
-                url: '/cursoudemy/models/model_servicios.php',
+                url: '/digiturno/models/model_servicios.php',
             }).then(function (response) {
                 var data = JSON.parse(response);
             if (data.codigo == 0) {

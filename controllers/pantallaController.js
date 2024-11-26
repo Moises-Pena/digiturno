@@ -43,7 +43,7 @@ function TurosGestion() {
       data: {
         "accion": "Verturnos",
       },
-      url: "/cursoudemy/models/model_pantalla.php",
+      url: "/digiturno/models/model_pantalla.php",
     }).then(function (response) {
       const tabla = document.querySelector("#tablaTurnos tbody");
       var datos = JSON.parse(response);
