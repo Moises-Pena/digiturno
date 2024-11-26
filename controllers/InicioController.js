@@ -15,7 +15,6 @@ $(".select2").wrap('<div class="position-relative"></div>').select2({
       return es;
     }
   });
-  
 
   let _colors = [
     {"id":"blue","color":"#007bff","text":"blue"},

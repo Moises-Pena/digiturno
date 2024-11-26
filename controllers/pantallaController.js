@@ -6,7 +6,6 @@ $(document).ready(function() {
         TurosGestion();
     }, 9500);
   });
-
   
 function Fechayhoraactual() {
     let fecha, horas, minutos, segundos, diaSemana, dia, mes, anio;

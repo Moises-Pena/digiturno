@@ -198,7 +198,6 @@ function finalizar_Turno() {
     });
 }
 
-
 function modalverturnos(){
     $('#TablaTurnos').DataTable().destroy();
     var table = $("#TablaTurnos").DataTable({

@@ -14,8 +14,7 @@ $(".select2").wrap('<div class="position-relative"></div>').select2({
     escapeMarkup: function(es) {
       return es;
     }
-  });
-  
+  });  
 
   let _colors = [
     {"id":"blue","color":"#007bff","text":"blue"},

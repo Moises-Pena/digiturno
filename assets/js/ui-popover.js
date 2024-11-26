@@ -11,3 +11,4 @@
     return new bootstrap.Popover(popoverTriggerEl, { html: true, sanitize: false });
   });
 })();
+

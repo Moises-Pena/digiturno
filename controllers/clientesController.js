@@ -50,7 +50,6 @@ var table = $("#TablaClientes").DataTable({
 });
 
 
-
 function GuardarCliente() {
 var Cliente = {
     documento:document.getElementsByName('documento')[0].value,
