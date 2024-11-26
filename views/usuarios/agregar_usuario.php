@@ -14,7 +14,7 @@
                               <form id="registrar_usuarios" class="registrar_usuarios">
                               <div class="row">
                                   <div class="col-4 mb-2">
-                                    <label class="form-label">Numero Documento</label>
+                                    <label class="form-label">Codigo de empleado</label>
                                     <input
                                       type="text"
                                       id="numero" name="numero"
