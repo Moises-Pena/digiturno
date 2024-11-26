@@ -32,7 +32,6 @@
 }
 
 
-
 @font-face {
   font-family: "DS-Digital";
   src: url("../fuente_reloj/BebasNeue-Regular.ttf") format('truetype');
@@ -52,6 +51,5 @@
       color: rgb(250, 250, 250);
       text-align: center; 
   }
-
 
 } 
