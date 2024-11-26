@@ -36,7 +36,7 @@ var table = $("#TablaUsuarios").DataTable({
         "data": {
             'accion': 'ListarUsuarios',
         },
-        "url": "/cursoudemy/models/model_usuario.php",
+        "url": "/digiturno/models/model_usuario.php",
 
     },
     "columns": [
@@ -95,7 +95,7 @@ Usuario.nivel == "" || Usuario.nivel == null || Usuario.nivel == undefined){
                 'accion': 'RegistroUsuario',
                 'datos': JSON.stringify(Usuario)
             },
-            url: '/cursoudemy/models/model_usuario.php',
+            url: '/digiturno/models/model_usuario.php',
         }).then(function (response) {
             var data = JSON.parse(response);
             if (data.codigo == 0) {
@@ -159,7 +159,7 @@ $.ajax({
         'accion': 'Obtenerusuario',
         'datos': idusuario
     },
-    url: '/cursoudemy/models/model_usuario.php',
+    url: '/digiturno/models/model_usuario.php',
 })
     .then(function (response) {
         var Data = JSON.parse(response);
@@ -209,7 +209,7 @@ var usuario = {
                 'accion': 'ActualizarUsuario',
                 'datos': JSON.stringify(usuario)
             },
-            url: '/cursoudemy/models/model_usuario.php',
+            url: '/digiturno/models/model_usuario.php',
         }).then(function (response) {
             var data = JSON.parse(response);
             if (data.codigo == 0) {
@@ -277,7 +277,7 @@ Swal.fire({
                     'datos': id,
                     'estado': estado == 1 ? "A" : "I"
                 },
-                url: '/cursoudemy/models/model_usuario.php',
+                url: '/digiturno/models/model_usuario.php',
             }).then(function (response) {
                 var data = JSON.parse(response);
             if (data.codigo == 0) {
@@ -312,7 +312,7 @@ function ListadoServicios() {
       data: {
           "accion": "VerServicios"
       },
-      url: "/cursoudemy/models/model_usuario.php",
+      url: "/digiturno/models/model_usuario.php",
   }).then(function (response) {
       var datos = JSON.parse(response);
       if (datos.status == true) {
@@ -331,7 +331,7 @@ function ListadoModulos() {
       data: {
           "accion": "VerModulos"
       },
-      url: "/cursoudemy/models/model_usuario.php",
+      url: "/digiturno/models/model_usuario.php",
   }).then(function (response) {
       var datos = JSON.parse(response);
       if (datos.status == true) {
@@ -350,7 +350,7 @@ function ListadoNiveles() {
       data: {
           "accion": "VerNiveles"
       },
-      url: "/cursoudemy/models/model_usuario.php",
+      url: "/digiturno/models/model_usuario.php",
   }).then(function (response) {
       var datos = JSON.parse(response);
       if (datos.status == true) {

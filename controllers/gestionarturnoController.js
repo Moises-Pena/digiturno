@@ -12,7 +12,7 @@ function DatosUsuario() {
             'accion': 'Obtenerdatosusuario',
             'datos': usuario
         },
-        url: '/cursoudemy/models/model_gestionar_turno.php',
+        url: '/digiturno/models/model_gestionar_turno.php',
     })
         .then(function (response) {
             var Data = JSON.parse(response);
@@ -62,7 +62,7 @@ function llamar_Turno() {
                     "servicio": servicio,
                     "modulo": modulo
                 },
-                url: "/cursoudemy/models/model_gestionar_turno.php",
+                url: "/digiturno/models/model_gestionar_turno.php",
             }).then(function (response) {
                 var datos = JSON.parse(response);
                 if (datos.codigo == 0) {
@@ -117,7 +117,7 @@ function atender_Turno() {
                     "servicio": servicio,
                     "modulo": modulo
                 },
-                url: "/cursoudemy/models/model_gestionar_turno.php",
+                url: "/digiturno/models/model_gestionar_turno.php",
             }).then(function (response) {
                 var datos = JSON.parse(response);
                 if (datos.codigo == 0) {
@@ -167,7 +167,7 @@ function finalizar_Turno() {
                     "servicio": servicio,
                     "modulo": modulo
                 },
-                url: "/cursoudemy/models/model_gestionar_turno.php",
+                url: "/digiturno/models/model_gestionar_turno.php",
             }).then(function (response) {
                 var datos = JSON.parse(response);
                 if (datos.codigo == 0) {
@@ -238,7 +238,7 @@ function modalverturnos(){
             "data": {
                 'accion': 'ListarTurnos',
             },
-            "url": "/cursoudemy/models/model_gestionar_turno.php",
+            "url": "/digiturno/models/model_gestionar_turno.php",
     
         },
         columns: [

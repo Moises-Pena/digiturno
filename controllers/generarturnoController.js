@@ -11,7 +11,7 @@ function BuscarCliente() {
             'accion': 'ObtenerCliente',
             'datos': numerodocumento
         },
-        url: '/cursoudemy/models/model_generar_turno.php',
+        url: '/digiturno/models/model_generar_turno.php',
     })
         .then(function (response) {
             var Data = JSON.parse(response);
@@ -63,7 +63,7 @@ function servicios() {
         data: {
             "accion": "VerServicios"
         },
-        url: "/cursoudemy/models/model_generar_turno.php",
+        url: "/digiturno/models/model_generar_turno.php",
     }).then(function (response) {
         var datos = JSON.parse(response);
         if (datos.status == true) {
@@ -124,7 +124,7 @@ function Generar_Turno(serv) {
                     'accion': 'GenerarTurno',
                     'datos': JSON.stringify(Datos)
                 },
-                url: '/cursoudemy/models/model_generar_turno.php',
+                url: '/digiturno/models/model_generar_turno.php',
             })
                 .then(function (response) {
                     var Data = JSON.parse(response);

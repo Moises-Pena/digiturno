@@ -48,7 +48,7 @@ if($cerrar_session){
             <div class="card-body">
               <div class="app-brand justify-content-center">
               </div>
-              <h4 class="mb-2">Bienvenidos Modo Turno</h4>
+              <h4 class="mb-2">Bienvenidos a Digiturno</h4>
               <p class="mb-4">Sistema de gestion de turnos Web</p>
               <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
                 <div class="mb-3">
