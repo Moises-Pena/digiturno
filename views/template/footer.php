@@ -6,7 +6,7 @@
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
-                 Yordis Escorcia
+                 Moises Peña
                 </div>
               </div>
             </footer>
